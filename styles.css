@@ -1,0 +1,433 @@
+/* Reset some default styles */
+body, html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Navbar styling */
+.navbar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #f8f9fa;
+}
+
+.navbar-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+}
+
+/* Logo styling */
+.logo img {
+  height: 40px; 
+}
+
+/* Menu styling */
+.menu {
+  display: flex;
+  gap: 20px; /* Space between menu items */
+  align-items: center;
+}
+
+.menu-item {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+.menu-item:hover {
+  color: #007bff; /* Change color on hover */
+}
+
+/* Account button styling */
+.account-button {
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.account-button:hover {
+  background-color: #0056b3; 
+}
+
+/* Navbar bottom line styling */
+.navbar-line {
+  width: 100%;
+  max-width: 1200px;
+  height: 2px;
+  background-color: #ddd;
+  margin-top: 10px;
+}
+
+
+/* Checkout Page Styling */
+.checkout-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 50px auto;
+  max-width: 1200px;
+  width: 90%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.checkout-left {
+  width: 65%;
+  height: auto;
+  padding: 20px;
+  background-color: #fff;
+}
+
+.checkout-right {
+  width: 35%;
+  height: 110vh;
+  padding: 20px;
+  background-color: #1179bf;
+  color: white; 
+}
+
+/* Title and Line */
+.checkout-left h2 {
+  margin-top: 0;
+  font-size: 24px;
+  color: #333;
+}
+
+.title-line {
+  width: 100%;
+  height: 1px;
+  background-color: #ddd;
+  margin: 10px 0 20px 0;
+}
+
+
+/* Form Styling */
+.checkout-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-step {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.step-number {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+  background-color: #007bff;
+  color: white;
+  border-radius: 50%;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.step-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+}
+
+.form-row {
+  display: flex;
+  gap: 20px;
+}
+
+.form-group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.form-group label {
+  font-size: 14px;
+  color: #555;
+}
+
+.form-group input {
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.form-group input::placeholder {
+  color: #999;
+}
+
+/* Form Bottom Line */
+.form-line {
+  width: 100%;
+  height: 1px;
+  background-color: #ddd;
+  margin-top: 20px;
+}
+
+/* Credit Card Input Styling */
+.credit-card-input {
+  display: flex;
+  align-items: center;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  overflow: hidden; /* Ensures no visible borders between inputs */
+}
+
+.credit-card-input input {
+  flex: 1;
+  border: none;
+  border-radius: 0;
+  padding: 8px;
+  font-size: 14px;
+}
+
+.credit-card-input input:not(:last-child) {
+  border-right: 1px solid #ddd; /* Adds a subtle divider between inputs */
+  border-right: unset;
+}
+
+.credit-card-input input#card-number {
+  flex: 2; /* Makes the card number input wider */
+}
+
+.credit-card-input input#expiry{
+	border: unset;
+}
+
+/* Buy WP Pusher Button */
+.buy-button {
+  width: 100%;
+  padding: 12px;
+  background-color: #038e7d;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.buy-button:hover {
+  background-color: #026a5d; /* Darker shade on hover */
+}
+
+/* Help Section */
+.help-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.help-text {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.help-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+  background-color: #007bff;
+  color: white;
+  border-radius: 50%;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.help-text p {
+  margin: 0;
+  font-size: 14px;
+  color: #555;
+}
+
+.help-text p strong {
+  font-weight: bold;
+}
+
+.support-image {
+  width: 100%;
+  max-width: 150px; 
+  height: auto;
+  margin-top: 10px;
+}
+
+/* Checkout Right Box Styling */
+.plan-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.plan-price {
+  display: flex;
+  align-items: flex-start;
+  gap: 5px;
+  margin-bottom: 10px;
+}
+
+.dollar-sign {
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 1;
+}
+
+.price-amount {
+  font-size: 48px;
+  font-weight: normal;
+  line-height: 1;
+}
+
+.price-duration {
+  font-size: 16px;
+  align-self: flex-end;
+  margin-bottom: 8px;
+}
+
+.plan-renewal {
+  font-size: 14px;
+  color: #e0e0e0;
+}
+
+/* Features List */
+.features-list {
+  margin-top: 30px; 
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.feature-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.feature-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  height: 24px;
+  background-color: #fff;
+  color: #1179bf;
+  border-radius: 50%;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.feature-text {
+  font-size: 16px;
+  color: #fff;
+}
+
+/* Agency Plan Suggestion */
+.agency-suggestion {
+  margin-top: 40px; 
+  margin-bottom: 20px; 
+}
+
+.suggestion-text p {
+  margin: 0;
+  font-size: 16px;
+  color: #fff;
+}
+
+.suggestion-text p strong {
+  font-weight: bold;
+}
+
+.switch-plan {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.suggestion-line {
+  width: 100%;
+  height: 1px;
+  background-color: #e0e0e0;
+  margin-top: 20px;
+}
+
+/* Testimonial Section */
+.testimonial-section {
+  margin-top: 30px; 
+}
+
+.testimonial-text {
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 15px; 
+}
+
+.testimonial-author {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.author-image {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%; /* Circular image */
+}
+
+.author-name {
+  font-size: 16px;
+  color: #fff;
+}
+
+/* Footer Styling */
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: inherit;
+  border-top: 1px solid #ddd;
+  margin-top: 50px; /* Good margin top space */
+}
+
+.footer-content {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.copyright {
+  font-size: 14px;
+  color: #333;
+}
+
+.terms-link {
+  font-size: 14px;
+  color: #007bff;
+  text-decoration: none;
+}
+
+.terms-link:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+
+
+
+
